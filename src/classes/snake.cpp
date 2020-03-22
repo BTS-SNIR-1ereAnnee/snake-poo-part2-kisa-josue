@@ -71,3 +71,29 @@ bool snake::checkColisionWithBoard()
     return FALSE;
 }
 
+
+bool snake::checkColisionWithSnake()
+{
+ 
+    Board *b;
+    b = Board::getInstance(); // on recup l'instance de board
+    
+    for (int o=1;o<longeur;o++)
+     {   
+       if(serpent[0].getX()==serpent[o].getX() && serpent[0].getY()==serpent[o].getY());
+     
+            return TRUE;
+    }
+    
+      return FALSE; 
+
+}
+
+
+
+
+
+
+
+
+

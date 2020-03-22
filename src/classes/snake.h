@@ -38,6 +38,9 @@ public:
     */
     bool checkColisionWithBoard();
 
+    ///Vérifie que le serpent ne se bouffe pas la queue
+    //  return true si le serpent se bouffe la queue           
+        bool checkColisionWithSnake();
 
 private:
     /** tableau de point, corps du serpent*/
